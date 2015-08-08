@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-5.1.1_r8" />
+           revision="refs/tags/android-5.1.1_r9" />
 
   <remote  name="github"
            fetch=".."
@@ -475,8 +475,8 @@
   <project path="packages/apps/Bluetooth" name="TeamBliss-LP/android_packages_apps_Bluetooth" remote="github" revision="lp5.1" />
   <project path="packages/apps/BluetoothExt" name="CyanogenMod/android_packages_apps_BluetoothExt" />
   <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" />
-  <project path="packages/apps/Calculator" name="CyanogenMod/android_packages_apps_Calculator" />
-  <project path="packages/apps/Calendar" name="CyanogenMod/android_packages_apps_Calendar" />
+  <project path="packages/apps/Calculator" name="TeamBliss-LP/android_packages_apps_Calculator" remote="github" revision="lp5.1" />
+  <project path="packages/apps/Calendar" name="TeamBliss-LP/android_packages_apps_Calendar" remote="github" revision="lp5.1" />
   <project path="packages/apps/CellBroadcastReceiver" name="TeamBliss-LP/android_packages_apps_CellBroadcastReceiver" remote="github" revision="lp5.1" />
   <project path="packages/apps/CertInstaller" name="CyanogenMod/android_packages_apps_CertInstaller" />
   <project path="packages/apps/CMAccount" name="CyanogenMod/android_packages_apps_CMAccount" />
