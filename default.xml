@@ -599,7 +599,7 @@
   <project path="sdk" name="platform/sdk" remote="aosp" />
   <project path="system/core" name="TeamBliss-LP/android_system_core" groups="pdk" remote="github" revision="lp5.1" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" />
-  <project path="system/extras/su" name="CyanogenMod/android_system_extras_su" />
+  <project path="system/extras/su" name="TeamBliss-LP/android_system_extras_su" remote="github" revision="lp5.1" />
   <project path="system/keymaster" name="CyanogenMod/android_system_keymaster" groups="pdk" />
   <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" />
   <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk" />
