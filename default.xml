@@ -23,14 +23,8 @@
   <remote name="TeamBliss-Devices"
           fetch="https://github.com/TeamBliss-Devices/" />
 
-  <remote name="TeamBliss"
-          fetch="https://github.com/TeamBliss/" />
-
   <remote name="tm"
           fetch="https://github.com/TheMuppets/" />
-
-  <remote name="lsd"
-          fetch="https://github.com/LiquidSmooth-Devices/" />
 
   <remote name="bitbucket" 
           fetch="https://bitbucket.org/" />
