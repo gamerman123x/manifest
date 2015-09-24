@@ -9,7 +9,7 @@ familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 To initialize your local repository using the BlissPop trees, use this command:
 
 
-    repo init -u https://github.com/TeamBliss-LP/android.git -b lp5.1
+    repo init -u https://github.com/gamerman123x/manifest.git -b lp5.1
 
 Then to sync up:
 

@@ -6,7 +6,7 @@
            review="android-review.googlesource.com"
            revision="refs/tags/android-5.1.1_r18" />
 
-  <remote  name="github"
+  <remote  name="gh"
            fetch=".."
            review="review.cyanogenmod.org" />
 
@@ -30,19 +30,19 @@
           fetch="https://bitbucket.org/" />
 
   <default revision="refs/heads/cm-12.1"
-           remote="github"
+           remote="gh"
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="TeamBliss-LP/android_build" remote="github" revision="lp5.1" >
+  <project path="build" name="gamerman123x/build" remote="gh" revision="lp5.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="TeamBliss-LP/android" remote="github" revision="lp5.1" />
+  <project path="manifest" name="gamerman123x/manifest" remote="gh" revision="lp5.1" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" />
-  <project path="bionic" name="TeamBliss-LP/android_bionic" groups="pdk" remote="github" revision="lp5.1" />
+  <project path="bionic" name="TeamBliss-LP/android_bionic" groups="pdk" remote="gh" revision="lp5.1" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" />
   <project path="cts" name="CyanogenMod/android_cts" groups="cts,pdk-cw-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" remote="aosp" />
@@ -50,9 +50,9 @@
   <project path="developers/demos" name="platform/developers/demos" remote="aosp" />
   <project path="developers/docs" name="platform/developers/docs" remote="aosp" />
   <project path="developers/samples/android" name="platform/developers/samples/android" remote="aosp" />
-  <project path="development" name="TeamBliss-LP/android_development" groups="pdk-cw-fs" remote="github" revision="lp5.1" />
+  <project path="development" name="TeamBliss-LP/android_development" groups="pdk-cw-fs" remote="gh" revision="lp5.1" />
   <project path="device/common" name="CyanogenMod/android_device_common" groups="pdk-cw-fs" />
-  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-12.1" />
+  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="gh" revision="cm-12.1" />
   <project path="device/generic/arm64" name="CyanogenMod/android_device_generic_arm64" groups="pdk" />
   <project path="device/generic/armv7-a-neon" name="CyanogenMod/android_device_generic_armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="CyanogenMod/android_device_generic_common" groups="pdk" />
@@ -90,7 +90,7 @@
   <project path="external/bash" name="CyanogenMod/android_external_bash" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" remote="aosp" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/bluetooth/bluedroid" name="TeamBliss-LP/android_external_bluetooth_bluedroid" groups="pdk" remote="github" revision="lp5.1"  />
+  <project path="external/bluetooth/bluedroid" name="TeamBliss-LP/android_external_bluetooth_bluedroid" groups="pdk" remote="gh" revision="lp5.1"  />
   <project path="external/bouncycastle" name="CyanogenMod/android_external_bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" remote="aosp" />
   <project path="external/bson" name="CyanogenMod/android_external_bson" />
@@ -141,10 +141,10 @@
   <project path="external/curl" name="CyanogenMod/android_external_curl" />
   <project path="external/deqp" name="platform/external/deqp" remote="aosp" />
   <project path="external/dexmaker" name="platform/external/dexmaker" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/dhcpcd" name="CyanogenMod/android_external_dhcpcd" groups="pdk-cw-fs" remote="github" />
+  <project path="external/dhcpcd" name="CyanogenMod/android_external_dhcpcd" groups="pdk-cw-fs" remote="gh" />
   <project path="external/dnsmasq" name="CyanogenMod/android_external_dnsmasq" groups="pdk" />
-  <project path="external/dnscrypt/dnscrypt-proxy" name="TeamBliss-LP/android_external_dnscrypt_dnscrypt-proxy" remote="github" revision="lp5.1" />
-  <project path="external/dnscrypt/libsodium" name="TeamBliss-LP/android_external_dnscrypt_libsodium" remote="github" revision="lp5.1" />
+  <project path="external/dnscrypt/dnscrypt-proxy" name="TeamBliss-LP/android_external_dnscrypt_dnscrypt-proxy" remote="gh" revision="lp5.1" />
+  <project path="external/dnscrypt/libsodium" name="TeamBliss-LP/android_external_dnscrypt_libsodium" remote="gh" revision="lp5.1" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,tradefed" remote="aosp" />
   <project path="external/dropbear" name="CyanogenMod/android_external_dropbear" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs" remote="aosp" />
@@ -203,7 +203,7 @@
   <project path="external/jhead" name="platform/external/jhead" groups="pdk" remote="aosp" />
   <project path="external/jline" name="platform/external/jline" groups="notdefault,tradefed" remote="aosp" />
   <project path="external/jmdns" name="platform/external/jmdns" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/jpeg" name="TeamBliss-LP/android_external_jpeg" groups="pdk" remote="github" revision="lp5.1" />
+  <project path="external/jpeg" name="TeamBliss-LP/android_external_jpeg" groups="pdk" remote="gh" revision="lp5.1" />
   <project path="external/jsilver" name="platform/external/jsilver" groups="pdk-cw-fs,tradefed" remote="aosp" />
   <project path="external/jsmn" name="platform/external/jsmn" groups="pdk" remote="aosp" />
   <project path="external/jsoncpp" name="platform/external/jsoncpp" groups="pdk-cw-fs" remote="aosp" />
@@ -215,7 +215,7 @@
   <project path="external/kernel-headers" name="platform/external/kernel-headers" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/kissfft" name="CyanogenMod/android_external_kissfft" />
   <project path="external/koush/ion" name="CyanogenMod/ion" />
-  <project path="external/koush/AndroidAsync" name="NamelessRom/android_external_koush_AndroidAsync" remote="github" revision="n-2.0" />
+  <project path="external/koush/AndroidAsync" name="NamelessRom/android_external_koush_AndroidAsync" remote="gh" revision="n-2.0" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/libcxx" name="platform/external/libcxx" groups="pdk" remote="aosp" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" remote="aosp" />
@@ -234,7 +234,7 @@
   <project path="external/libpcap" name="platform/external/libpcap" groups="pdk,pdk-cw-fs" remote="aosp" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/libphonenumbergoogle" name="CyanogenMod/android_external_libphonenumbergoogle" />
-  <project path="external/libpng" name="TeamBliss-LP/android_external_libpng" groups="pdk" remote="github" revision="lp5.1" />
+  <project path="external/libpng" name="TeamBliss-LP/android_external_libpng" groups="pdk" remote="gh" revision="lp5.1" />
   <project path="external/libppp" name="CyanogenMod/android_external_libppp" />
   <project path="external/libseccomp-helper" name="platform/external/libseccomp-helper" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/libselinux" name="CyanogenMod/android_external_libselinux" groups="pdk" />
@@ -312,9 +312,9 @@
   <project path="external/rsync" name="CyanogenMod/android_external_rsync" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" remote="aosp" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" remote="aosp" />
-  <project path="external/sepolicy" name="TeamBliss-LP/android_external_sepolicy" groups="pdk" remote="github" revision="lp5.1" />
+  <project path="external/sepolicy" name="TeamBliss-LP/android_external_sepolicy" groups="pdk" remote="gh" revision="lp5.1" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk-cw-fs,qcom_msm8x26" remote="aosp" />
-  <project path="external/skia" name="TeamBliss-LP/android_external_skia" groups="pdk-cw-fs,qcom_msm8x26" remote="github" revision="lp5.1" />
+  <project path="external/skia" name="TeamBliss-LP/android_external_skia" groups="pdk-cw-fs,qcom_msm8x26" remote="gh" revision="lp5.1" />
   <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fw" remote="aosp" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/sonivox" name="CyanogenMod/android_external_sonivox" groups="pdk" />
@@ -357,8 +357,8 @@
   <project path="external/zip" name="CyanogenMod/android_external_zip" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/av" name="TeamBliss-LP/android_frameworks_av" groups="pdk" remote="github" revision="lp5.1" />
-  <project path="frameworks/base" name="TeamBliss-LP/android_frameworks_base" remote="github" revision="lp5.1" />
+  <project path="frameworks/av" name="TeamBliss-LP/android_frameworks_av" groups="pdk" remote="gh" revision="lp5.1" />
+  <project path="frameworks/base" name="gamerman123x/frameworks_base" remote="gh" revision="lp5.1" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk" />
@@ -367,13 +367,13 @@
   <project path="frameworks/minikin" name="CyanogenMod/android_frameworks_minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml" />
   <project path="frameworks/multidex" name="CyanogenMod/android_frameworks_multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="TeamBliss-LP/android_frameworks_native" groups="pdk" remote="github" revision="lp5.1" />
+  <project path="frameworks/native" name="TeamBliss-LP/android_frameworks_native" groups="pdk" remote="gh" revision="lp5.1" />
   <project path="frameworks/opt/bitmap" name="CyanogenMod/android_frameworks_opt_bitmap" />
   <project path="frameworks/opt/bluetooth" name="CyanogenMod/android_frameworks_opt_bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar" />
   <project path="packages/apps/Camera2" name="CyanogenMod/android_packages_apps_Camera2" />
   <project path="frameworks/opt/carddav" name="CyanogenMod/android_frameworks_opt_carddav" />
-  <project path="frameworks/opt/cards" name="temasek/frameworks_opt_cards" remote="github" revision="cm-12.1" />
+  <project path="frameworks/opt/cards" name="temasek/frameworks_opt_cards" remote="gh" revision="cm-12.1" />
   <project path="frameworks/opt/chips" name="CyanogenMod/android_frameworks_opt_chips" groups="pdk-cw-fs" />
   <project path="frameworks/opt/colorpicker" name="CyanogenMod/android_frameworks_opt_colorpicker" />
   <project path="frameworks/opt/datetimepicker" name="CyanogenMod/android_frameworks_opt_datetimepicker" />
@@ -384,17 +384,17 @@
   <project path="frameworks/opt/net/ethernet" name="CyanogenMod/android_frameworks_opt_net_ethernet" />
   <project path="frameworks/opt/net/ims" name="CyanogenMod/android_frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs" />
   <project path="frameworks/opt/net/voip" name="CyanogenMod/android_frameworks_opt_net_voip" />
-  <project path="frameworks/opt/net/wifi" name="TeamBliss-LP/android_frameworks_opt_net_wifi" groups="pdk" remote="github" revision="lp5.1" />
+  <project path="frameworks/opt/net/wifi" name="TeamBliss-LP/android_frameworks_opt_net_wifi" groups="pdk" remote="gh" revision="lp5.1" />
   <project path="frameworks/opt/photoviewer" name="CyanogenMod/android_frameworks_opt_photoviewer" />
   <project path="frameworks/opt/setupwizard" name="CyanogenMod/android_frameworks_opt_setupwizard" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/telephony" name="TeamBliss-LP/android_frameworks_opt_telephony" groups="pdk" remote="github" revision="lp5.1" />
+  <project path="frameworks/opt/telephony" name="TeamBliss-LP/android_frameworks_opt_telephony" groups="pdk" remote="gh" revision="lp5.1" />
   <project path="frameworks/opt/timezonepicker" name="CyanogenMod/android_frameworks_opt_timezonepicker" />
   <project path="frameworks/opt/vcard" name="CyanogenMod/android_frameworks_opt_vcard" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" remote="aosp" />
   <project path="frameworks/rs" name="CyanogenMod/android_frameworks_rs" groups="pdk" />
   <project path="frameworks/support" name="CyanogenMod/android_frameworks_support" />
   <project path="frameworks/volley" name="CyanogenMod/android_frameworks_volley" />
-  <project path="frameworks/webview" name="arter97/android_frameworks_webview" remote="github" revision="cm-12.1" />
+  <project path="frameworks/webview" name="arter97/android_frameworks_webview" remote="gh" revision="cm-12.1" />
   <project path="frameworks/wilhelm" name="CyanogenMod/android_frameworks_wilhelm" />
   <project path="hardware/akm" name="CyanogenMod/android_hardware_akm" groups="pdk" />
   <project path="hardware/broadcom/libbt" name="CyanogenMod/android_hardware_broadcom_libbt" groups="pdk" />
@@ -415,7 +415,7 @@
   <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" remote="aosp" />
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" remote="aosp" />
   <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="TeamBliss-LP/android_hardware_libhardware" groups="pdk" remote="github" revision="lp5.1" />
+  <project path="hardware/libhardware" name="TeamBliss-LP/android_hardware_libhardware" groups="pdk" remote="gh" revision="lp5.1" />
   <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" groups="pdk" />
   <project path="hardware/nvidia/audio" name="CyanogenMod/android_hardware_nvidia_audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="CyanogenMod/android_hardware_nvidia_tegra124" groups="tegra124" />
@@ -460,18 +460,17 @@
   <project path="hardware/ti/omap4xxx" name="CyanogenMod/android_hardware_ti_omap4xxx" />
   <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan" />
   <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" />
-  <project path="libcore" name="TeamBliss-LP/android_libcore" remote="github" revision="lp5.1" />
+  <project path="libcore" name="TeamBliss-LP/android_libcore" remote="gh" revision="lp5.1" />
   <project path="libnativehelper" name="CyanogenMod/android_libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" remote="aosp" />
-  <project path="packages/apps/AudioFX" name="TeamBliss-LP/android_packages_apps_AudioFX" remote="github" revision="lp5.1" />
+  <project path="packages/apps/AudioFX" name="TeamBliss-LP/android_packages_apps_AudioFX" remote="gh" revision="lp5.1" />
   <project path="packages/apps/BasicSmsReceiver" name="CyanogenMod/android_packages_apps_BasicSmsReceiver" />
-  <project path="packages/apps/BlissOTA" name="chummydevteam/TeamBlissOTA" remote="github" revision="stable" />
-  <project path="packages/apps/Bluetooth" name="TeamBliss-LP/android_packages_apps_Bluetooth" remote="github" revision="lp5.1" />
+  <project path="packages/apps/Bluetooth" name="TeamBliss-LP/android_packages_apps_Bluetooth" remote="gh" revision="lp5.1" />
   <project path="packages/apps/BluetoothExt" name="CyanogenMod/android_packages_apps_BluetoothExt" />
   <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" />
-  <project path="packages/apps/Calculator" name="TeamBliss-LP/android_packages_apps_Calculator" remote="github" revision="lp5.1" />
-  <project path="packages/apps/Calendar" name="TeamBliss-LP/android_packages_apps_Calendar" remote="github" revision="lp5.1" />
-  <project path="packages/apps/CellBroadcastReceiver" name="TeamBliss-LP/android_packages_apps_CellBroadcastReceiver" remote="github" revision="lp5.1" />
+  <project path="packages/apps/Calculator" name="TeamBliss-LP/android_packages_apps_Calculator" remote="gh" revision="lp5.1" />
+  <project path="packages/apps/Calendar" name="TeamBliss-LP/android_packages_apps_Calendar" remote="gh" revision="lp5.1" />
+  <project path="packages/apps/CellBroadcastReceiver" name="TeamBliss-LP/android_packages_apps_CellBroadcastReceiver" remote="gh" revision="lp5.1" />
   <project path="packages/apps/CertInstaller" name="CyanogenMod/android_packages_apps_CertInstaller" />
   <project path="packages/apps/CMAccount" name="CyanogenMod/android_packages_apps_CMAccount" />
   <project path="packages/apps/SetupWizard" name="CyanogenMod/android_packages_apps_SetupWizard" />
@@ -479,27 +478,27 @@
   <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" />
   <!-- <project path="packages/apps/CMHome" name="CyanogenMod/android_packages_apps_CMHome" /> -->
   <project path="packages/apps/CMWallpapers" name="CyanogenMod/android_packages_apps_CMWallpapers" />
-  <project path="packages/apps/Contacts" name="TeamBliss-LP/android_packages_apps_Contacts" remote="github" revision="lp5.1" />
-  <project path="packages/apps/ContactsCommon" name="TeamBliss-LP/android_packages_apps_ContactsCommon" remote="github" revision="lp5.1" />
-  <project path="packages/apps/DeskClock" name="TeamBliss-LP/android_packages_apps_DeskClock" remote="github" revision="lp5.1" />
-  <project path="packages/apps/Dialer" name="TeamBliss-LP/android_packages_apps_Dialer" remote="github" revision="lp5.1" />
+  <project path="packages/apps/Contacts" name="TeamBliss-LP/android_packages_apps_Contacts" remote="gh" revision="lp5.1" />
+  <project path="packages/apps/ContactsCommon" name="TeamBliss-LP/android_packages_apps_ContactsCommon" remote="gh" revision="lp5.1" />
+  <project path="packages/apps/DeskClock" name="TeamBliss-LP/android_packages_apps_DeskClock" remote="gh" revision="lp5.1" />
+  <project path="packages/apps/Dialer" name="TeamBliss-LP/android_packages_apps_Dialer" remote="gh" revision="lp5.1" />
   <project path="packages/apps/Eleven" name="CyanogenMod/android_packages_apps_Eleven" />
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" />
   <project path="packages/apps/Exchange" name="CyanogenMod/android_packages_apps_Exchange" />
   <project path="packages/apps/Gallery2" name="CyanogenMod/android_packages_apps_Gallery2" />
   <project path="packages/apps/HTMLViewer" name="CyanogenMod/android_packages_apps_HTMLViewer" />
-  <project path="packages/apps/InCallUI" name="TeamBliss-LP/android_packages_apps_InCallUI" remote="github" revision="lp5.1" />
+  <project path="packages/apps/InCallUI" name="TeamBliss-LP/android_packages_apps_InCallUI" remote="gh" revision="lp5.1" />
   <project path="packages/apps/KeyChain" name="CyanogenMod/android_packages_apps_KeyChain" />
-  <project path="packages/apps/LockClock" name="TeamBliss-LP/android_packages_apps_LockClock" remote="github" revision="lp5.1" />
+  <project path="packages/apps/LockClock" name="TeamBliss-LP/android_packages_apps_LockClock" remote="gh" revision="lp5.1" />
   <project path="packages/apps/ManagedProvisioning" name="CyanogenMod/android_packages_apps_ManagedProvisioning" />
-  <project path="packages/apps/Mms" name="TeamBliss-LP/android_packages_apps_Mms-caf" remote="github" revision="lp5.1" />
-  <project path="packages/apps/Nfc" name="AICP/packages_apps_Nfc" remote="github" revision="lp5.1" />
+  <project path="packages/apps/Mms" name="TeamBliss-LP/android_packages_apps_Mms-caf" remote="gh" revision="lp5.1" />
+  <project path="packages/apps/Nfc" name="AICP/packages_apps_Nfc" remote="gh" revision="lp5.1" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" remote="aosp" />
-  <project path="packages/apps/PackageInstaller" name="crdroidandroid/android_packages_apps_PackageInstaller" remote="github" revision="cm-12.0" />
-  <project path="packages/apps/PhoneCommon" name="TeamBliss-LP/android_packages_apps_PhoneCommon" remote="github" revision="lp5.1" />
+  <project path="packages/apps/PackageInstaller" name="crdroidandroid/android_packages_apps_PackageInstaller" remote="gh" revision="cm-12.0" />
+  <project path="packages/apps/PhoneCommon" name="TeamBliss-LP/android_packages_apps_PhoneCommon" remote="gh" revision="lp5.1" />
   <project path="packages/apps/Profiles" name="CyanogenMod/android_packages_apps_Profiles" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" />
-  <project path="packages/apps/Settings" name="TeamBliss-LP/android_packages_apps_Settings" remote="github" revision="lp5.1" />
+  <project path="packages/apps/Settings" name="gamerman123x/packages_apps_Settings" remote="gh" revision="lp5.1" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" />
   <project path="packages/apps/SpeechRecorder" name="CyanogenMod/android_packages_apps_SpeechRecorder" />
@@ -510,14 +509,14 @@
   <project path="packages/apps/Trebuchet" name="CyanogenMod/android_packages_apps_Trebuchet" />
   <project path="packages/apps/TvSettings" name="CyanogenMod/android_packages_apps_TvSettings" />
   <project path="packages/apps/UnifiedEmail" name="CyanogenMod/android_packages_apps_UnifiedEmail" />
-  <project path="packages/apps/BlissStats" name="TeamBliss-LP/android_packages_apps_RomStats" remote="github" revision="lp5.0" />
+  <project path="packages/apps/BlissStats" name="TeamBliss-LP/android_packages_apps_RomStats" remote="gh" revision="lp5.0" />
   <project path="packages/experimental" name="CyanogenMod/android_packages_experimental" />
-  <project path="packages/inputmethods/LatinIME" name="TeamBliss-LP/android_packages_inputmethods_LatinIME" remote="github" revision="lp5.1" />
+  <project path="packages/inputmethods/LatinIME" name="TeamBliss-LP/android_packages_inputmethods_LatinIME" remote="gh" revision="lp5.1" />
   <project path="packages/providers/ApplicationsProvider" name="CyanogenMod/android_packages_providers_ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="CyanogenMod/android_packages_providers_CalendarProvider" />
-  <project path="packages/providers/ContactsProvider" name="TeamBliss-LP/android_packages_providers_ContactsProvider" remote="github" revision="lp5.1" />
-  <project path="packages/providers/DownloadProvider" name="TeamBliss-LP/android_packages_providers_DownloadProvider" remote="github" revision="lp5.1" />
-  <project path="packages/providers/MediaProvider" name="TeamBliss-LP/android_packages_providers_MediaProvider" remote="github" revision="lp5.1" />
+  <project path="packages/providers/ContactsProvider" name="TeamBliss-LP/android_packages_providers_ContactsProvider" remote="gh" revision="lp5.1" />
+  <project path="packages/providers/DownloadProvider" name="TeamBliss-LP/android_packages_providers_DownloadProvider" remote="gh" revision="lp5.1" />
+  <project path="packages/providers/MediaProvider" name="TeamBliss-LP/android_packages_providers_MediaProvider" remote="gh" revision="lp5.1" />
   <project path="packages/providers/PartnerBookmarksProvider" name="CyanogenMod/android_packages_providers_PartnerBookmarksProvider" />
   <project path="packages/providers/TelephonyProvider" name="CyanogenMod/android_packages_providers_TelephonyProvider" />
   <project path="packages/providers/ThemesProvider" name="CyanogenMod/android_packages_providers_ThemesProvider" />
@@ -527,8 +526,8 @@
   <project path="packages/screensavers/PhotoTable" name="CyanogenMod/android_packages_screensavers_PhotoTable" />
   <project path="packages/screensavers/WebView" name="CyanogenMod/android_packages_screensavers_WebView" />
   <project path="packages/services/Mms" name="CyanogenMod/android_packages_services_Mms" />
-  <project path="packages/services/Telecomm" name="TeamBliss-LP/android_packages_services_Telecomm" remote="github" revision="lp5.1" />
-  <project path="packages/services/Telephony" name="TeamBliss-LP/android_packages_services_Telephony" remote="github" revision="lp5.1" />
+  <project path="packages/services/Telecomm" name="TeamBliss-LP/android_packages_services_Telecomm" remote="gh" revision="lp5.1" />
+  <project path="packages/services/Telephony" name="TeamBliss-LP/android_packages_services_Telephony" remote="gh" revision="lp5.1" />
   <project path="packages/wallpapers/Basic" name="CyanogenMod/android_packages_wallpapers_Basic" />
   <project path="packages/wallpapers/Galaxy4" name="CyanogenMod/android_packages_wallpapers_Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="CyanogenMod/android_packages_wallpapers_HoloSpiral" />
@@ -587,22 +586,22 @@
   <project path="prebuilts/libs/libedit" name="platform/prebuilts/libs/libedit" groups="pdk-cw-fs" remote="aosp" />
   <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs" remote="aosp" />
   <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk,tradefed" remote="aosp" />
-  <project path="prebuilts/ndk" name="TeamBliss-LP/prebuilt_ndk" groups="pdk" remote="github" revision="lp5.1" />
+  <project path="prebuilts/ndk" name="TeamBliss-LP/prebuilt_ndk" groups="pdk" remote="gh" revision="lp5.1" />
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin" remote="aosp" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux" remote="aosp" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" remote="aosp" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" remote="aosp" />
   <project path="sdk" name="platform/sdk" remote="aosp" />
-  <project path="system/core" name="TeamBliss-LP/android_system_core" groups="pdk" remote="github" revision="lp5.1" />
+  <project path="system/core" name="TeamBliss-LP/android_system_core" groups="pdk" remote="gh" revision="lp5.1" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" />
-  <project path="system/extras/su" name="TeamBliss-LP/android_system_extras_su" remote="github" revision="lp5.1" />
+  <project path="system/extras/su" name="TeamBliss-LP/android_system_extras_su" remote="gh" revision="lp5.1" />
   <project path="system/keymaster" name="CyanogenMod/android_system_keymaster" groups="pdk" />
   <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" />
   <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk" />
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" />
   <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk" />
-  <project path="system/vold" name="TeamBliss-LP/android_system_vold" groups="pdk" remote="github" revision="lp5.1" />
+  <project path="system/vold" name="TeamBliss-LP/android_system_vold" groups="pdk" remote="gh" revision="lp5.1" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" remote="aosp" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" remote="aosp" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" remote="aosp" />
@@ -621,49 +620,35 @@
   <!--TeamBliss repos -->
 
   <!-- <project path="packages/apps/BlissPapers" name="TeamBliss-LP/android_packages_apps_BlissPapers" revision="lp5.0" /> -->
-  <project path="packages/apps/KernelAdiutor" name="SlimSaber/KernelAdiutor" remote="github" revision="lp5.1" />
-  <project path="packages/apps/FloatingActionButton" name="SlimSaber/android-floating-action-button"  remote="github" revision="lp5.1" />
-  <!-- <project path="frameworks/support" name="TeamBliss-LP/platform_frameworks_support" remote="github" revision="lp5.1" /> -->
+  <project path="packages/apps/KernelAdiutor" name="SlimSaber/KernelAdiutor" remote="gh" revision="lp5.1" />
+  <project path="packages/apps/FloatingActionButton" name="SlimSaber/android-floating-action-button"  remote="gh" revision="lp5.1" />
+  <!-- <project path="frameworks/support" name="TeamBliss-LP/platform_frameworks_support" remote="gh" revision="lp5.1" /> -->
   <project path="packages/apps/OmniSwitch" name="TeamBliss-LP/android_packages_apps_OmniSwitch" revision="lp5.1" /> 
-  <project path="packages/apps/MonthCalendarWidget" name="omnirom/android_packages_apps_MonthCalendarWidget" revision="android-5.0" />
   <project path="packages/apps/ScreenRecorder" name="TeamBliss-LP/android_packages_apps_ScreenRecorder" revision="lp5.0" />
-  <project name="mikeNG/android_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="cm-12.1" />
 
   <!--Vendor Repos-->
-  <project path="vendor/bliss" name="TeamBliss-LP/android_vendor_bliss" remote="github" revision="lp5.1" >
+  <project path="vendor/bliss" name="gamerman123x/vendor_bliss" remote="gh" revision="lp5.1" >
       <copyfile src="tools/build.sh" dest="build.sh" />
   </project>
-  <project path="vendor/lge" name="TeamBliss-Devices/proprietary_vendor_lge" remote="github" revision="lp5.1" />
-  <project path="vendor/asus" name="TheMuppets/proprietary_vendor_asus" remote="github" revision="cm-12.1" />  
-  <project path="vendor/samsung" name="TeamBliss-Devices/proprietary_vendor_samsung" remote="github" revision="lp5.1" />
-  <project path="vendor/htc" name="TeamBliss-Devices/proprietary_vendor_htc" remote="github" revision="lp5.1" />
-  <project path="vendor/motorola" name="TeamBliss-Devices/proprietary_vendor_motorola" remote="github" revision="lp5.1" />
-  <project path="vendor/sony" name="TheMuppets/proprietary_vendor_sony" remote="github" revision="cm-12.1" />
-  <project path="vendor/samsung/i9082" name="TeamBliss/android_vendor_samsung_i9082" remote="github" revision="kk4.4" />
-  <project path="vendor/samsung/galaxys2plus-common" name="TeamBliss-Devices/proprietary_vendor_samsung_galaxys2plus-common" remote="github" revision="lp5.0" />
-  <project path="vendor/oneplus" name="TheMuppets/proprietary_vendor_oneplus" remote="github" revision="cm-12.1" />
-  <project path="vendor/oppo" name="TheMuppets/proprietary_vendor_oppo" remote="github" revision="cm-12.1" />
-  <project path="vendor/audience" name="TheMuppets/proprietary_vendor_audience" remote="github" revision="cm-12.1" />
-  <project path="vendor/broadcom" name="TheMuppets/proprietary_vendor_broadcom" remote="github" revision="cm-12.1" />
-  <project path="vendor/widevine" name="TheMuppets/proprietary_vendor_widevine" remote="github" revision="cm-12.1" />
-  <!--  <project path="vendor/moto/shamu" name="pjgraber03/vendor_moto_shamu" remote="github" revision="5.1" /> -->
-  <project path="vendor/xiaomi" name="TeamBliss-Devices/proprietary_vendor_xiaomi" remote="github" revision="lp5.1" />
+  <project path="vendor/oneplus" name="TheMuppets/proprietary_vendor_oneplus" remote="gh" revision="cm-12.1" />
+  <project path="vendor/oppo" name="TheMuppets/proprietary_vendor_oppo" remote="gh" revision="cm-12.1" />
+
   <!--Additional Repos-->
-  <project name="frap129/x86_64-linux-glibc-2.20-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.20-4.8" remote="github" revision="master" />
-  <project name="TeamBliss-Devices/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lp5.1" />
-  <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" revision="cm-12.1" />
+  <project name="frap129/x86_64-linux-glibc-2.20-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.20-4.8" remote="gh" revision="master" />
+  <project name="TeamBliss-Devices/android_hardware_samsung" path="hardware/samsung" remote="gh" revision="lp5.1" />
+  <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="gh" revision="cm-12.1" />
 
   <!-- SABERMOD ROM TOOLCHAINS -->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-sm" name="infected-lp/sm_arm-linux-androideabi-4.8.x" remote="github" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-sm" name="infected-lp/sm_arm-linux-androideabi-4.9.x" remote="github" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-hybrid" name="infected-lp/sm_rom_4.9_hybrid" remote="github" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1-sm" name="TeamBliss-LP/arm-linux-androideabi-5.1" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-sm" name="infected-lp/sm_arm-linux-androideabi-4.8.x" remote="gh" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-sm" name="infected-lp/sm_arm-linux-androideabi-4.9.x" remote="gh" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-hybrid" name="infected-lp/sm_rom_4.9_hybrid" remote="gh" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1-sm" name="TeamBliss-LP/arm-linux-androideabi-5.1" remote="gh" revision="master" />
 
   <!-- SAMBERMOD KERNEL TOOLCAHINS -->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-sm" name="infected-lp/sm_arm-eabi-4.8.x" remote="github" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-sm" name="infected-lp/sm_arm-eabi-4.9.x" remote="github" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-hybrid" name="infected-lp/sm_kernel_4.9_hybrid" remote="github" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.1-sm" name="TeamBliss-LP/arm-eabi-5.1" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-sm" name="infected-lp/sm_arm-eabi-4.8.x" remote="gh" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-sm" name="infected-lp/sm_arm-eabi-4.9.x" remote="gh" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-hybrid" name="infected-lp/sm_kernel_4.9_hybrid" remote="gh" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.1-sm" name="TeamBliss-LP/arm-eabi-5.1" remote="gh" revision="master" />
 
    <!-- LINARO ROM TOOLCHAINS -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-linaro" name="UBERTC/arm-linux-androideabi-4.8" remote="bitbucket" revision="master" />
