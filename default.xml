@@ -377,7 +377,7 @@
   <project path="frameworks/opt/colorpicker" name="CyanogenMod/android_frameworks_opt_colorpicker" />
   <project path="frameworks/opt/datetimepicker" name="CyanogenMod/android_frameworks_opt_datetimepicker" />
   <project path="frameworks/opt/emoji" name="CyanogenMod/android_frameworks_opt_emoji" />
-  <project path="frameworks/opt/hardware" name="CyanogenMod/android_frameworks_opt_hardware" />
+  <project path="frameworks/opt/hardware" name="TeamBliss-LP/android_frameworks_opt_hardware" remote="gh" revision="lp5.1" />
   <project path="frameworks/opt/inputmethodcommon" name="CyanogenMod/android_frameworks_opt_inputmethodcommon" />
   <project path="frameworks/opt/mms" name="CyanogenMod/android_frameworks_opt_mms" />
   <project path="frameworks/opt/net/ethernet" name="CyanogenMod/android_frameworks_opt_net_ethernet" />
@@ -505,7 +505,7 @@
   <project path="packages/apps/UnifiedEmail" name="CyanogenMod/android_packages_apps_UnifiedEmail" />
   <project path="packages/apps/BlissStats" name="TeamBliss-LP/android_packages_apps_RomStats" remote="gh" revision="lp5.0" />
   <project path="packages/experimental" name="CyanogenMod/android_packages_experimental" />
-  <project path="packages/inputmethods/LatinIME" name="TeamBliss-LP/android_packages_inputmethods_LatinIME" remote="gh" revision="lp5.1" />
+  <project path="packages/inputmethods/LatinIME" name="gamerman123x/packages_inputmethods_LatinIME" remote="gh" revision="lp5.1" />
   <project path="packages/providers/ApplicationsProvider" name="CyanogenMod/android_packages_providers_ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="CyanogenMod/android_packages_providers_CalendarProvider" />
   <project path="packages/providers/ContactsProvider" name="TeamBliss-LP/android_packages_providers_ContactsProvider" remote="gh" revision="lp5.1" />
@@ -609,7 +609,7 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" revision="cm-12.1" />
-  <project path="vendor/cmsdk" name="CyanogenMod/cm_platform_sdk" revision="cm-12.1" />
+  <project path="vendor/cmsdk" name="TeamBliss-LP/cm_platform_sdk" remote="gh" revision="lp5.1" />
 
   <!--TeamBliss repos -->
 
